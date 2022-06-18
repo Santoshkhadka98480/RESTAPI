@@ -1,0 +1,26 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: password
+    url: jdbc:postgresql://localhost:5432/BRS
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+app:
+  constant1: CONSTANT1
+  constant2: CONSTANT2
+
+  username: admin
+  password: password
+  algorithm: SHA256
+
+secret_key1: 123456789
+secret_key2: 987654321
